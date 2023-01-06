@@ -1,6 +1,6 @@
 <?php
 
-
+require_once "../lib/game.php";
 function handle_user($method, $b,$input) {
 	if($method=='GET') {
 		show_user($b);
