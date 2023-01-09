@@ -10,7 +10,7 @@ function handle_user($method, $b,$input) {
 }
 function show_user($b) {
 	global $mysqli;
-	$sql = 'select username,player from players where player=?';
+	$sql = 'select * from players where player=?';
 	$st = $mysqli->prepare($sql);
 	$st->bind_param('s',$b);
 	$st->execute();

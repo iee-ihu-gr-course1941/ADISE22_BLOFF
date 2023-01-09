@@ -52,7 +52,7 @@ function update_game_status() {
 		case 1: $new_status='initialized'; break;
 		case 2: $new_status='started'; 
 				if($status['player_turn']==null) {
-					$new_turn='X'; // It was not started before...
+					$new_turn='X'; 
 				}
 				break;
 	}
